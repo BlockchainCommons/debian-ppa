@@ -5,9 +5,9 @@ Maintainer: Christopher Allen ChristopherA@LifeWithAlacrity.com
 Depends: libc++-dev
 Filename: ./keytool-cli_0.4.0.deb
 Size: 1625816
-MD5sum: d4c2d3d750481656520fc280e8d45c17
-SHA1: bcf8c8170dd0f1a91d1bdc221dd83ccba7e60e84
-SHA256: b1e769e486fe7e13716c1f95d0330ece438908d8970126cc2605398bbe6c6e33
+MD5sum: f1a5affa5a277e99c95754cab623f688
+SHA1: 51ad3eb79b2d0dd4b8bddfc7234359a91f763b2d
+SHA256: 144e17968768c456a30a8db688aacd45de7f7fdea24c1e0abc749d27ce02d1dd
 Section: base
 Priority: optional
 Homepage: https://github.com/BlockchainCommons/bc-keytool-cli
@@ -20,9 +20,9 @@ Maintainer: Christopher Allen ChristopherA@LifeWithAlacrity.com
 Depends: libc++-dev
 Filename: ./seedtool-cli_0.10.1.deb
 Size: 727448
-MD5sum: 526d44321454b683191f015829240bbf
-SHA1: 4edb76efe5fcb3099bab6191254d802c89a7ad23
-SHA256: 8866fa3334104ce1281470fb6fbb81737fec5b63be9dca4af0d53bff2c4e37e2
+MD5sum: 5ccab600931e1d6da9fbe3a3e86c6126
+SHA1: c91971e07a798906d482f492b142536c236a46b9
+SHA256: 0f46f867aad5ee774edd7cc0971b959d40502b31711e5972b8c2b4c0c7f272f7
 Section: base
 Priority: optional
 Homepage: https://github.com/BlockchainCommons/bc-seedtool-cli

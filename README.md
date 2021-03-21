@@ -12,11 +12,17 @@ This repo holds debian packages of various Blockchain Commons tools:
 
 ` ppa-debian`  is currently under active development and in the late alpha testing phase. It should not be used for production tasks until it has had further testing and auditing.
 
-### Roadmap
 
 ## Prerequisites
 
+Debian based Linux OS
+
 ## Installation Instructions
+
+```bash
+wget -O - -o /dev/null  "https://BlockchainCommons.github.io/debian-ppa/KEY.gpg" | sudo apt-key add -
+wget -O - -o /dev/null  "https://BlockchainCommons.github.io/debian-ppa/debian/my_list_file.list" | sudo tee -a  /etc/apt/sources.list.d/my_list_file.list
+```
 
 ## Usage Instructions
 

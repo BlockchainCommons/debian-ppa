@@ -1,0 +1,15 @@
+Package: keytool
+Version: 0.4.0
+Architecture: all
+Maintainer: Christopher Allen ChristopherA@LifeWithAlacrity.com
+Depends: libc++-dev
+Filename: ./keytool_0.4.0.deb
+Size: 1625816
+MD5sum: fb826be9f4758fa958f756c0b76a9754
+SHA1: 47c5fc4c56c775ef2c4b8c01fe64a4dc3c6ed619
+SHA256: 89c2950ff5a65212af5c9660e4469f0644d193527298f4d9a33ea99920d3cd9b
+Section: base
+Priority: optional
+Homepage: https://github.com/BlockchainCommons/bc-keytool-cli
+Description: A CLI tool that implements a data flow graph for deriving cryptocurrency keys and addresses.
+

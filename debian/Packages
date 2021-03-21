@@ -13,3 +13,18 @@ Priority: optional
 Homepage: https://github.com/BlockchainCommons/bc-keytool-cli
 Description: A CLI tool that implements a data flow graph for deriving cryptocurrency keys and addresses.
 
+Package: seedtool-cli
+Version: 0.10.1
+Architecture: all
+Maintainer: Christopher Allen ChristopherA@LifeWithAlacrity.com
+Depends: libc++-dev
+Filename: ./seedtool-cli_0.10.1.deb
+Size: 727448
+MD5sum: 526d44321454b683191f015829240bbf
+SHA1: 4edb76efe5fcb3099bab6191254d802c89a7ad23
+SHA256: 8866fa3334104ce1281470fb6fbb81737fec5b63be9dca4af0d53bff2c4e37e2
+Section: base
+Priority: optional
+Homepage: https://github.com/BlockchainCommons/bc-seedtool-cli
+Description: Command Line Implementation in C of Master Cryptographic Seed Tools
+

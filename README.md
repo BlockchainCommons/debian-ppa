@@ -20,8 +20,12 @@ Debian based Linux OS
 ## Installation Instructions
 
 ```bash
-wget -O - -o /dev/null  "https://BlockchainCommons.github.io/debian-ppa/KEY.gpg" | sudo apt-key add -
-wget -O - -o /dev/null  "https://BlockchainCommons.github.io/debian-ppa/debian/my_list_file.list" | sudo tee -a  /etc/apt/sources.list.d/my_list_file.list
+$ wget -O - -o /dev/null  "https://BlockchainCommons.github.io/debian-ppa/KEY.gpg" | sudo apt-key add -
+$ wget -O - -o /dev/null  "https://BlockchainCommons.github.io/debian-ppa/debian/my_list_file.list" | sudo tee -a  /etc/apt/sources.list.d/my_list_file.list
+```
+
+```bash
+$ sudo apt-get install package-name
 ```
 
 ## Usage Instructions

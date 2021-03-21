@@ -21,7 +21,7 @@ Debian based Linux OS
 
 ```bash
 $ wget -O - -o /dev/null  "https://BlockchainCommons.github.io/debian-ppa/KEY.gpg" | sudo apt-key add -
-$ wget -O - -o /dev/null  "https://BlockchainCommons.github.io/debian-ppa/debian/my_list_file.list" | sudo tee -a  /etc/apt/sources.list.d/my_list_file.list
+$ wget -O - -o /dev/null  "https://BlockchainCommons.github.io/debian-ppa/BlockchainCommons.list" | sudo tee -a  /etc/apt/sources.list.d/BlockchainCommons.list
 $ sudo apt-get update
 ```
 

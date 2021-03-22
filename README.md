@@ -7,6 +7,8 @@ This repo holds debian packages of various Blockchain Commons tools:
 * seedtool
 * keytool
 
+See [packages](debian/Packages) for more details.
+
 
 ## Status - Late Alpha
 
@@ -26,6 +28,61 @@ To publish a new debian package (.deb) a maintainer has to:
 
 ### Creating a debian package
 
+
+Decide on the name of your project in accordance with [[source](https://ubuntuforums.org/showthread.php?t=910717)]
+
+```bash
+<project>_<major version>.<minor version>.<package revision>
+```
+
+For example:
+
+```bash
+helloworld_1.0.1
+```
+
+Create a directory with the following structure:
+
+```bash
+$ mkdir helloworld_1.0.1
+$ mkdir helloworld_1.0.1/usr
+$ mkdir helloworld_1.0.1/usr/local
+$ mkdir helloworld_1.0.1/usr/local/bin
+```
+
+Follow the build instructions of a particular tool that you want to package.
+After the executable is generated, copy paste it into `helloworld_1.0.1/usr/local/bin`
+
+Noe create the file `control`:
+
+```bash
+mkdir helloworld_1.0-1/DEBIAN
+gedit helloworld_1.0-1/DEBIAN/control
+```
+
+with the following content:
+
+```bash
+Package: helloworld
+Version: 1.0.1
+Section: base
+Priority: optional
+Architecture: all
+Depends: libsomethingorrather (>= 1.2.13), anotherDependency (>= 1.2.6)
+Maintainer: Your Name <you@email.com>
+Description: Hello World
+ When you need some sunshine, just run this
+ small program!
+```
+
+Finally, create the package with:
+
+```bash
+dpkg-deb --build helloworld_1.0.1
+```
+
+Copy paste the generated package `helloworld_1.0.1.deb` into this repo into `debian/`
+
 ### Sign the PPA
 
 Execute the script in the root of the project:
@@ -38,6 +95,12 @@ $ ./update.sh
 
 ```bash
 KEYNAME=41F0EA1699A74C1E2FA41B538CF96BC3FF9DBBCE
+```
+
+and export his public key to the root of this repo:
+
+```bash
+key gpg --armor --export "${EMAIL or fingerprint of the key}" > KEY.gpg
 ```
 
 ### Test

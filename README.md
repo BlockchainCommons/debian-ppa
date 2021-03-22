@@ -101,7 +101,7 @@ KEYNAME=41F0EA1699A74C1E2FA41B538CF96BC3FF9DBBCE
 and export his public key to the root of this repo:
 
 ```bash
-key gpg --armor --export "${EMAIL or fingerprint of the key}" > KEY.gpg
+$ gpg --armor --export "${EMAIL or fingerprint of the key}" > KEY.gpg
 ```
 
 ### Test

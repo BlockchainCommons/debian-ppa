@@ -13,6 +13,20 @@ Priority: optional
 Homepage: https://github.com/BlockchainCommons/bc-keytool-cli
 Description: A CLI tool that implements a data flow graph for deriving cryptocurrency keys and addresses.
 
+Package: lifehash-cli
+Version: 0.1.0
+Architecture: all
+Maintainer: Christopher Allen ChristopherA@LifeWithAlacrity.com
+Filename: ./lifehash-cli_0.1.0.deb
+Size: 204556
+MD5sum: 1c7620698e85201e35f5ec3420f6d10c
+SHA1: 5e179be13f959bfa2ccef8ab62afce002884c20f
+SHA256: 49cf6eb08a056ef7e2b98263038fbeb6ebfa85abbc0c6a1db1d7ceadd0c0c4cd
+Section: base
+Priority: optional
+Homepage: https://github.com/BlockchainCommons/bc-lifehash-cli
+Description: A C++ command line tool that generates LifeHash images as PNG files.
+
 Package: seedtool-cli
 Version: 0.10.1
 Architecture: all

@@ -6,6 +6,7 @@
 This repo holds debian packages of various Blockchain Commons tools:
 * seedtool
 * keytool
+* lifehash
 
 See [packages](debian/Packages) for more details.
 
@@ -128,6 +129,7 @@ $ sudo apt-get install package-name
 where package-name can be:
 * seedtool-cli
 * keytool-cli
+* lifehash-cli
 
 It is recommended to check if the program works and if the version is correctly bumped.
 

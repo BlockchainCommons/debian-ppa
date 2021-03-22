@@ -15,9 +15,11 @@ This repo holds debian packages of various Blockchain Commons tools:
 
 ## Prerequisites
 
-Debian based Linux OS
+Debian based Linux OS (e.g. Debian, Ubuntu, Tails)
 
 ## Installation Instructions
+
+Execute these 3 steps to add a gpg key and a ppa to your local database:
 
 ```bash
 $ wget -O - -o /dev/null  "https://BlockchainCommons.github.io/debian-ppa/KEY.gpg" | sudo apt-key add -
@@ -25,9 +27,21 @@ $ wget -O - -o /dev/null  "https://BlockchainCommons.github.io/debian-ppa/debian
 $ sudo apt-get update
 ```
 
+> Note, on Tails OS the second step is:
+
+```bash
+$ wget -O - -o /dev/null  "https://BlockchainCommons.github.io/debian-ppa/debian/BlockchainCommons.list" | sed -e "s/https/tor+http/g" | sudo tee -a  /etc/apt/sources.list.d/BlockchainCommons.list
+```
+
+Finally, you can install a Blockchain Commons package:
+
 ```bash
 $ sudo apt-get install package-name
 ```
+
+where package-name can be:
+* seedtool-cli
+* keytool-cli
 
 ## Usage Instructions
 

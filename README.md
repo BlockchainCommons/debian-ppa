@@ -54,7 +54,7 @@ $ mkdir helloworld_1.0.1/usr/local/bin
 Follow the build instructions of a particular tool that you want to package.
 After the executable is generated, copy paste it into `helloworld_1.0.1/usr/local/bin`
 
-Noe create the file `control`:
+Now create the file `control`:
 
 ```bash
 mkdir helloworld_1.0-1/DEBIAN
